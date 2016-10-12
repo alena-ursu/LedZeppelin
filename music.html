@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Tribute Led Zeppelin</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="plugin/css/stylep.css" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script type="text/javascript" src="plugin/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="plugin/jquery-jplayer/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="plugin/ttw-music-player-min.js"></script>
+    <script type="text/javascript" src="plugin/js/myplaylist.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var description = 'Tribute Led Zeppelin ';
+
+            $('body').ttwMusicPlayer(myPlaylist, {
+                autoPlay:false, 
+                description:description,
+                jPlayer:{
+                    swfPath:'../plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+        });
+    </script>
+	
+	
+	
+</head>
+<body class="music">
+
+<div class="conteiner">
+    <ul class="nav">
+			<li><a href="#"><img src="img/11.png" width="30" alt="Menu"></a>
+            <ul class="subs">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+				<li><a href="about.html">About</a></li>
+                <li><a href="music.html">Music Catalog</a></li>
+                <li><a href="chart.html">Charts Top 20</a></li>
+                <li><a href="photo.html">Photo Gallery</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+    <div style="clear:both"></div>
+    
+</div>
+	<div id="footer">Copyright © Elena</div>
+</body>
+</html>
